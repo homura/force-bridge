@@ -16,12 +16,12 @@ export class ForceBridgeCore {
   }
 
   static get ckb(): CKB {
-    asserts(ForceBridgeCore._config, 'ForceBridgeCore is not init yet');
+    asserts(ForceBridgeCore._ckb, 'ForceBridgeCore is not init yet');
     return ForceBridgeCore._ckb;
   }
 
   static get ckbIndexer(): CkbIndexer {
-    asserts(ForceBridgeCore._config, 'ForceBridgeCore is not init yet');
+    asserts(ForceBridgeCore._ckbIndexer, 'ForceBridgeCore is not init yet');
     return ForceBridgeCore._ckbIndexer;
   }
 
